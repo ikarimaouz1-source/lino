@@ -191,6 +191,8 @@ section { padding-block: clamp(96px, 12vw, 160px); position: relative; }
 .apply h3 { margin: 0 0 4px; font-family: var(--mincho); font-weight: 500; letter-spacing: .16em; color: var(--blush); font-size: 18px; }
 .contact-row { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; padding-block: 10px; border-top: 1px solid var(--line-soft); }
 .contact-row b { font-weight: 400; font-family: var(--display); letter-spacing: .24em; color: var(--rose); width: 4.5em; }
+.line-btn { display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px; border-radius: 999px; background: #06c755; color: #fff; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: .08em; line-height: 1.6; transition: filter .3s; }
+.line-btn:hover { filter: brightness(1.1); }
 .copy { margin-left: auto; background: transparent; border: 1px solid var(--line); color: var(--muted); font: inherit; font-size: 11px; letter-spacing: .1em; padding: 2px 12px; cursor: pointer; transition: color .3s, border-color .3s; }
 .copy:hover { color: var(--blush); border-color: var(--rose); }
 .note { color: var(--muted); font-size: 12px; margin: 0; }
@@ -303,6 +305,7 @@ footer small { font-family: var(--display); letter-spacing: .3em; }
           <dt>Open</dt><dd>15:00 – <span class="tbd">閉店時間（要確認）</span></dd>
           <dt>Closed</dt><dd><span class="tbd">○曜日</span></dd>
           <dt>Tel</dt><dd><span class="tbd">03-0000-0000</span></dd>
+          <dt>LINE</dt><dd><a class="line-btn" href="https://lin.ee/tFFE7Rb" target="_blank" rel="noopener">LINEで友だち追加</a></dd>
           <dt>Instagram</dt><dd><span class="tbd">@lino_ikebukuro</span></dd>
         </dl>
         <p class="age"><span>20</span>20歳未満の方のご入店・飲酒はお断りしております。</p>
@@ -351,7 +354,7 @@ footer small { font-family: var(--display); letter-spacing: .3em; }
           </ul>
           <div class="apply">
             <h3>まずは気軽に、応募・ご相談を。</h3>
-            <div class="contact-row"><b>LINE</b><span class="tbd" id="c-line">lino_recruit</span><button class="copy" data-target="c-line" type="button">コピー</button></div>
+            <div class="contact-row"><b>LINE</b><a class="line-btn" href="https://lin.ee/tFFE7Rb" target="_blank" rel="noopener">LINEで友だち追加・応募する</a></div>
             <div class="contact-row"><b>TEL</b><span class="tbd" id="c-tel">080-0000-0000</span><button class="copy" data-target="c-tel" type="button">コピー</button></div>
             <p class="note">応募資格：20歳以上の女性（高校生不可）／面接は随時、私服・すっぴんでOK</p>
           </div>
